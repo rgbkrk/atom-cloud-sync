@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable cloud-sync': 'cloud-sync:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'cloud-sync'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'cloud-sync:toggle' }
+      ]
+    ]
+  }
+]
